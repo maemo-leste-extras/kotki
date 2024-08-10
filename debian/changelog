@@ -1,3 +1,9 @@
+libkotki (0.7.6) unstable; urgency=medium
+
+  * Add more language codes (e.g https://localizely.com/language-code/lv/)
+
+ -- Sander <code@kroket.io>  Sat, 11 Aug 2024 02:32:36 +0100
+
 libkotki (0.7.5) unstable; urgency=medium
 
   * Also recursively search in /usr/share/kotki/ for language models
