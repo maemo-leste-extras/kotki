@@ -115,6 +115,16 @@ install(FILES
         )
 
 
+add_executable(kotki-server kotki/server_main.cpp kotki/server.cpp)
+target_link_libraries(kotki-server PRIVATE kotki-lib-SHARED)
+target_include_directories(kotki-server PRIVATE
+        ${CMAKE_CURRENT_LIST_DIR}
+        ${CMAKE_CURRENT_SOURCE_DIR}
+)
+install(TARGETS kotki-server
+        RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
+)
+
 # some demo apps
 if(BUILD_DEMO)
     add_executable(kotki-cli demo/kotki.cpp)
